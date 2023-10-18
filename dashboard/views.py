@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse("THIS IS THE INDEX PAGE")
+    return render(request, 'dashboard/index.html')
 
 def staff(request):
-    return HttpResponse("THIS IS THE STAFF PAGE")
+    return render(request,'dashboard/staff.html')
